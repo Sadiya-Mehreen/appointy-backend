@@ -51,5 +51,8 @@ app.get('/test-db', (req, res) => {
   }
 });
 
-
+app.get("/", (req, res) => {
+  res.send("Appointy Backend is Running 🚀");
+});
 app.listen(port, () => console.log(`Server started on PORT:${port}`))
+
